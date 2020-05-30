@@ -4,7 +4,7 @@ setup(
     install_requires=["GitPython","datetime","seaborn","pandas","numpy","matplotlib","argparse"],
     entry_points={
         "console_scripts": [
-            "gilot = app:main"
+            "gilot = gilot.app:main"
         ]
     },
     name="gilot",
