@@ -2,6 +2,8 @@ from setuptools import setup
 
 setup(
     install_requires=["GitPython","datetime","seaborn","pandas","numpy","matplotlib","argparse"],
+    packages=find_packages("src"),
+    package_dir={"": "src"},
     entry_points={
         "console_scripts": [
             "gilot = gilot.app:main"
